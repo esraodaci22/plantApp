@@ -1,0 +1,10 @@
+package com.srdc.plantapp.domain.model
+
+
+
+data class Category(
+    val id: Int,
+    val name: String,
+    val title: String,
+    val image: String
+)
