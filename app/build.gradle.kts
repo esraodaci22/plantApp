@@ -34,12 +34,12 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
 
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
 }
 
@@ -84,6 +84,13 @@ dependencies {
 
     //Glide
     implementation("com.github.bumptech.glide:glide:4.15.0")
+
+    //ViewPager2
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
+
+    //DotsIndicator
+    implementation("com.tbuonomo:dotsindicator:4.3")
 
     // Test
     testImplementation("junit:junit:4.13.2")

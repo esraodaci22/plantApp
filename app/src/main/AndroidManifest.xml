@@ -14,11 +14,16 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name="com.srdc.plantapp.presenter.ui.onboarding.OnboardingActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
             android:name="com.srdc.plantapp.MainActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.nav-graph"
                 android:resource="@navigation/nav_graph" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
